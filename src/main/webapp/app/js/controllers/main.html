@@ -1,0 +1,28 @@
+<ol class="breadcrumb">
+    <li class="active">Products</li>
+</ol>
+
+<widget></widget>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Is in the store</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in products">
+            <td>{{product.id}}</td>
+            <td ng-bind="product.name"></td>
+            <td>{{product.price}}</td>
+            <td>
+                <span ng-show="product.inStore">Yes</span>
+            </td>
+            <td><a href="#/product/{{product.id}}">show</a></td>
+        </tr>
+    </tbody>
+</table>

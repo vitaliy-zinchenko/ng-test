@@ -1,0 +1,31 @@
+<ol class="breadcrumb">
+    <li><a href="#/main">Products</a></li>
+    <li class="active" ng-bind="product.id"></li>
+</ol>
+
+<widget></widget>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Product #
+        <span ng-bind="product.id"></span>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                Name:
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <span ng-bind="product.name"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                Price:
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <span ng-bind="product.price"></span>
+            </div>
+        </div>
+    </div>
+</div>
